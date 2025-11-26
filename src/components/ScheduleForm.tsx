@@ -58,7 +58,7 @@ const ScheduleForm: React.FC<ScheduleFormProps> = ({
         <textarea
           name="description"
           placeholder="Description"
-          value={editingSchedule ? editingSchedule.description ?? '' : newSchedule.description}
+          value={editingSchedule ? editingSchedule.description ?? '' : newSchedule.description ?? ''}
           onChange={handleInputChange}
           className="w-full rounded-md border border-zinc-300 bg-white p-2 text-black dark:border-zinc-700 dark:bg-zinc-800 dark:text-white"
         />
